@@ -52,14 +52,14 @@ def get_news_heads(inp):
         result.append([pub,title,link])
     return result
 
-a=input("검색어")
-b=int(input("최대 뉴스 개수"))
-A=get_news_heads(a)
-for i in range(min(b,len(A))):
-  print("#"*50)
-  print("제목 :",A[i][1])
-  print("출처 :",A[i][0])
-  print("링크 :",A[i][2])
+#a=input("검색어")
+#b=int(input("최대 뉴스 개수"))
+#A=get_news_heads(a)
+#for i in range(min(b,len(A))):
+#  print("#"*50)
+#  print("제목 :",A[i][1])
+#  print("출처 :",A[i][0])
+#  print("링크 :",A[i][2])
 
 
 
