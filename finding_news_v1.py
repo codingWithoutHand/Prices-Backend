@@ -81,14 +81,15 @@ def get_news_heads(inp):
         result.sort()
     return result
 
-# 검색어는 물품 + "물가" 로 구성되며, "상승", "하락" 을 추가하면 더 확실하게 알수있음
-a=input("검색어")
-b=int(input("최대 뉴스 개수"))
-A=get_news_heads(a)
-for i in range(min(b,len(A))):
-  print("#"*50)
-  print("제목 :",A[i][2])
-  print("출처 :",A[i][1])
-  print("날짜 :",A[i][4])
-  print("링크 :",A[i][3])
+# 검색어는 물품 + "물가" 로 구성되며, "상승" 을 추가하면 더 확실하게 알수있음 (하락을 잘 안될 가능성이 있음)
+# 날짜 가 얻어지는 거만 정렬하고 아닌거는 가장 상단에 나오게 함(날짜를 못얻는게 별로 없어서 상단 배치)
+#a=input("검색어")
+#b=int(input("최대 뉴스 개수"))
+#A=get_news_heads(a)
+#for i in range(min(b,len(A))):
+#  print("#"*50)
+#  print("제목 :",A[i][2])
+#  print("출처 :",A[i][1])
+#  print("날짜 :",A[i][4])
+#  print("링크 :",A[i][3])
 
